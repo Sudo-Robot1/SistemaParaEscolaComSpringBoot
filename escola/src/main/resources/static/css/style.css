@@ -1,0 +1,12 @@
+body{
+    background-color: #7E8A8A;
+}
+a{
+    text-decoration: none;
+    border: 1px solid black;
+    color:#fff;
+    padding: 5px;
+    border-radius: 40px;
+    background-color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
