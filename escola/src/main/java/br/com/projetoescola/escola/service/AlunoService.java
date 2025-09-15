@@ -2,6 +2,8 @@ package br.com.projetoescola.escola.service;
 
 import java.util.List;
 
+import javax.print.attribute.standard.MediaSize.Other;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,5 +27,14 @@ public class AlunoService {
         return alunoRepository.findAll();
     }
 
+    // método para excluir um aluno pelo id
+    public void deleteById(Integer id){
+        alunoRepository.deleteById(id);
+    }
+
+    // Método para buscar o aluno pelo id
+public Aluno findById(Integer id){
+    return alunoRepository.findById(id).orElse(null);
+}
     
 }

@@ -26,4 +26,11 @@ public class CursoService {
     public List<Curso> findAll(){
         return cursoRepository.findAll();
     }
+
+    public Curso findById(Integer id) {
+        return null;
+    }
+
+    public void deleteById(Integer id) {
+    }
 }

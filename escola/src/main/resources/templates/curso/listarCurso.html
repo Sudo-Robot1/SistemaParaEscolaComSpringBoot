@@ -32,8 +32,8 @@
             <td th:text="${curso.periodoCurso}"></td>
 
             <td>
-                <a th:href="@{/curso/editar{id}(id=${curso.idCurso})}">Editar</a>
-                <a th:href="@{/curso/excluir{id}(id=${curso.idCurso})}">Excluir</a>
+                <a th:href="@{/curso/editar/{id}(id=${curso.idCurso})}">Editar</a>
+                <a th:href="@{/curso/excluir/{id}(id=${curso.idCurso})}">Excluir</a>
             </td>
         </tr>
     </table>
